@@ -5,11 +5,11 @@ import { FormsModule } from '@angular/forms';  // Import FormsModule
   selector: 'app-root',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'] // CSS file linked here
+  templateUrl: './user-login-component.component.html',
+  styleUrls: ['./user-login-component.component.css'] // CSS file linked here
 })
 export class AppComponent {
-  name: string = '';
+  username: string = '';
   email: string = '';
   password: string = '';
   confirmPassword: string = '';
@@ -17,7 +17,7 @@ export class AppComponent {
   onSubmit() {
     
       console.log('Form Submitted', {
-        name: this.name,
+        username: this.username,
         email: this.email,
         password: this.password,
     

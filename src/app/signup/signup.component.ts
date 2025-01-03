@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';  // Import FormsModule
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
+  selector: 'app-signup',
   imports: [FormsModule],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'] // CSS file linked here
+  templateUrl: './signup.component.html',
+  styleUrl: './signup.component.css'
 })
-export class AppComponent {
+export class SignupComponent {
   name: string = '';
   email: string = '';
   password: string = '';
@@ -25,3 +24,4 @@ export class AppComponent {
 
     }
   }
+
